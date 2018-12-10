@@ -1,0 +1,8 @@
+:import("../../utilities.css") {
+    color_dark-gray: color_dark-gray;
+}
+
+.selector:hover {
+    cursor: pointer;
+    color: color_dark-gray;
+}

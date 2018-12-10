@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Collapsible from 'react-collapsible';
 
+import Arrow from '../../icons/arrow'
 import Selector from '../../components/Selector';
 
 import './style.css';
@@ -11,7 +12,7 @@ const props = {
 }
 
 const defaultProps = {
-    note: '',
+    note: {},
 }
 
 const CollapsibleTabLayout = props => {
@@ -20,7 +21,10 @@ const CollapsibleTabLayout = props => {
 
     const collapseDetail = name => {
         return (
-            <Selector>{name}</Selector>
+            <Selector>
+                <Arrow />
+                {name}
+            </Selector>
         );
     };
 
@@ -28,7 +32,11 @@ const CollapsibleTabLayout = props => {
         return items.map(item => {
             console.log('expand map', item)
             if(isFolder(item)) return renderCollapsible(item.folderName, expandDetail(item.items));
-            else return <Selector key={`selector__${item.fileName}`}>{item.fileName}</Selector>
+            else return (
+                <Selector key={`selector__${item.fileName}`}>
+                    {item.fileName}
+                </Selector>
+            );
         });
     }
 

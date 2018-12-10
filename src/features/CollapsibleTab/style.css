@@ -4,4 +4,6 @@
 
 .collapsible-tab {
     background-color: color_white-gray;
+    height: 100vh;
+    min-width: 20%;
 }

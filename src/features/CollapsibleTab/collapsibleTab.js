@@ -7,9 +7,15 @@ import './style.css';
 
 const CollapsibleTab = () => {
 
+    const renderItems = () => {
+        return mock.map(item => {
+            return <CollapsibleTabLayout key={`collapsible-tab__${item.itemName}`} note={item}/>
+        })
+    }
+
     return (
         <div className="collapsible-tab">
-            <CollapsibleTabLayout note={mock[0]}/>
+            {renderItems()}
         </div>
     );
 

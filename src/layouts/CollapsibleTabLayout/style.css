@@ -1,3 +1,16 @@
-.Collapsible__contentOuter {
-    padding-left: 1rem;
+.collapsible-tab-layout {
+    margin: 0.5rem 1rem;
+}
+
+.collapsible-tab-layout .Collapsible__contentOuter {
+    margin-left: 1rem;
+}
+
+.collapsible-tab-layout .Collapsible__trigger.is-open .icon-arrow {
+    transform: rotate(60deg);
+}
+
+.collapsible-tab-layout .icon-arrow {
+    width: 0.5rem;
+    padding-right: 0.25rem;
 }
