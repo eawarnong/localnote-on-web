@@ -1,0 +1,7 @@
+:import("../../utilities.css") {
+    color_white-gray: color_white-gray;
+}
+
+.collapsible-tab {
+    background-color: color_white-gray;
+}

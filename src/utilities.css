@@ -1,0 +1,16 @@
+:export {
+
+    /*color*/
+    color_black: #27272C;
+    color_dark-gray: #4B4B4C;
+    color_light-gray: #C2C2C2;
+    color_white-gray: #F2F2F2;
+    color_white: #FFFFFF;
+
+    /*breakpoint*/
+    breakpoint_small: 600px;
+    breakpoint_medium: 768px;
+    breakpoint_large: 992px;
+    breakpoint_extra-large: 1200px;
+
+}
